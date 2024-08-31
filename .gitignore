@@ -5,6 +5,7 @@
 # Ignoring pracctice files
 
 ## allow some files
+!.github
 !.dockerignore
 !.gitattributes
 !.nojekyll
