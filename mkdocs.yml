@@ -1,0 +1,81 @@
+site_name: Kumari Pallawi
+site_url: "https://pallawi-sharma.github.io/Pallawi-sharma/"
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+
+plugins:
+  # - git-snippet
+#   - social
+#   - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Pallawi-sharma
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/niraj71177480
+    # - icon: fontawesome/brands/linkedin
+    #   link: http://linkedin.com/in/niraj-kumar-21142817b/
+      
+nav:
+  - Getting started: index.md
+  # - Github:
+  #   - github-jekyl.md
+  # - Computer Vision:
+  #   - computer_vision/index.md
+  # - Web Development:
+  #   - web_development/index.html
+  # - Python Stack:
+  #   - python_stack/python_programming.md
+  #   - python_stack/snippet.md
+  # - Examples: example.md
+  # - Packages:
+  #   - package/observable.md
+  #   - package/queue.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      permalink_class: toc-permalink
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - codehilite:
+      guess_lang: False
+  - tables
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+
+copyright: |
+  &copy; 2024 <a href="https://github.com/Pallawi-sharma"  target="_blank" rel="noopener">Kumari Pallawi</a>
