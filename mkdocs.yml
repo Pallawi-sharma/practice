@@ -43,6 +43,11 @@ extra:
       
 nav:
   - Getting started: index.md
+  - NLP:
+    - nlp/index.md
+    - nlp/bow.md
+    - nlp/tf-idf.md
+
   # - Github:
   #   - github-jekyl.md
   # - Computer Vision:
