@@ -47,6 +47,8 @@ nav:
     - nlp/index.md
     - nlp/bow.md
     - nlp/tf-idf.md
+  - React:
+    - react/react-fundamental.md
 
   # - Github:
   #   - github-jekyl.md
