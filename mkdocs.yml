@@ -49,7 +49,7 @@ nav:
     - nlp/tf-idf.md
   - React:
     - react/react-fundamental.md
-  - SQL
+  - SQL:
     - SQL/SQL_basics.md
     - SQL/SQL_intermediate.md
 
