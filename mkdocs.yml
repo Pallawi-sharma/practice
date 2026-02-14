@@ -1,5 +1,5 @@
 site_name: Kumari Pallawi
-site_url: "https://pallawi-sharma.github.io/Pallawi-sharma/"
+site_url: "https://pallawi-sharma.github.io/pallawi/"
 theme:
   name: material
   features:
@@ -49,6 +49,9 @@ nav:
     - nlp/tf-idf.md
   - React:
     - react/react-fundamental.md
+  - SQL
+    - SQL/SQL_basics.md
+    - SQL/SQL_intermediate.md
 
   # - Github:
   #   - github-jekyl.md
