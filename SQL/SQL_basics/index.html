@@ -6,19 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="NLP, BOW technique">
+        <meta name="description" content="Learnings">
       
       
-        <meta name="author" content="Kumari Pallawi">
+      
+        <link rel="canonical" href="https://pallawi-sharma.github.io/pallawi/SQL/SQL_basics/">
       
       
-        <link rel="canonical" href="https://pallawi-sharma.github.io/pallawi/nlp/bow/">
-      
-      
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../tf-idf/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +20,7 @@
     
     
       
-        <title>Bow - Kumari Pallawi</title>
+        <title>SQL Basics - Kumari Pallawi</title>
       
     
     
@@ -78,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bag-of-words-bow" class="md-skip">
+        <a href="#sql-basics" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bow
+              SQL Basics
             
           </span>
         </div>
@@ -224,13 +218,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../nlp/" class="md-tabs__link">
           
   
   NLP
@@ -335,8 +327,6 @@
       
   
   
-    
-  
   
   
     
@@ -347,12 +337,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -366,7 +356,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             NLP
@@ -380,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../nlp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -398,28 +388,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Bow
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../nlp/bow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -428,96 +400,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bag-of-words-bow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bag of Words (BoW)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-concepts-of-bag-of-words" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Concepts of Bag of Words:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-bow-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How BoW Works
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-of-bag-of-words" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example of Bag of Words
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advantages-of-bow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Advantages of BoW
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#limitations-of-bow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Limitations of BoW
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variations-of-bow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Variations of BoW
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#implementing-bow-in-python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementing BoW in Python
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -530,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tf-idf/" class="md-nav__link">
+      <a href="../../nlp/tf-idf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -654,109 +536,155 @@
                   
 
 
-  <h1>Bow</h1>
-
-<h2 id="bag-of-words-bow">Bag of Words (BoW)<a class="toc-permalink" href="#bag-of-words-bow" title="Permanent link">&para;</a></h2>
+<h1 id="sql-basics">SQL Basics<a class="toc-permalink" href="#sql-basics" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-sql">What is SQL?<a class="toc-permalink" href="#what-is-sql" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Bag of Words (BoW) is a simple and widely used technique in Natural Language Processing (NLP) to represent text data as numerical features for machine learning models. </li>
-<li>The BoW model converts text into a "bag" of individual words, ignoring grammar and word order but preserving the frequency of words.</li>
-</ul>
-<h2 id="key-concepts-of-bag-of-words">Key Concepts of Bag of Words:<a class="toc-permalink" href="#key-concepts-of-bag-of-words" title="Permanent link">&para;</a></h2>
-<p><strong>Vocabulary:</strong> BoW creates a set of all unique words (or "tokens") from the text data, which forms the vocabulary.</p>
-<p><strong>Word Frequency:</strong> Each word in the text is assigned a frequency count, representing how many times it appears in the document.</p>
-<p><strong>Document Representation:</strong> Each document (or sentence) is represented as a vector, where each dimension corresponds to a word from the vocabulary, and the value represents the frequency of that word in the document.</p>
-<h2 id="how-bow-works">How BoW Works<a class="toc-permalink" href="#how-bow-works" title="Permanent link">&para;</a></h2>
-<ol>
+<li>SQL (Structured Query Language) is used to:</li>
+<li>Store data</li>
+<li>Retrieve data</li>
+<li>Update data</li>
 <li>
-<p><strong>Tokenization:</strong> First, the text is split into individual tokens (words or phrases).</p>
+<p>Delete data
+ from a database.</p>
 </li>
 <li>
-<p><strong>Vocabulary Building:</strong> A unique vocabulary of words from the entire corpus is constructed.</p>
+<p>SQL works with relational databases like:</p>
 </li>
-<li>
-<p><strong>Vector Representation:</strong> For each document, a vector is created, where each position corresponds to a word in the vocabulary, and the value in that position is the count of the word in the document. If the word does not appear, the count is 0.</p>
-</li>
-</ol>
-<h2 id="example-of-bag-of-words">Example of Bag of Words<a class="toc-permalink" href="#example-of-bag-of-words" title="Permanent link">&para;</a></h2>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+<li>SQL Server</li>
+<li>Oracle</li>
+<li>SQLite </li>
+</ul>
+<h2 id="what-is-a-database">What is a Database?<a class="toc-permalink" href="#what-is-a-database" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Let’s assume we have two sentences:</li>
-<li>Sentence 1: "The cat sat on the mat."</li>
-<li>Sentence 2: "The dog lay on the rug."</li>
+<li>A database is a place where data is stored.</li>
 </ul>
-<p><strong>Step 1:</strong> Tokenization</p>
+<h2 id="what-is-a-table">What is a Table?<a class="toc-permalink" href="#what-is-a-table" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Extract the words (ignoring punctuation):</li>
-<li>Sentence 1: ['the', 'cat', 'sat', 'on', 'the', 'mat']</li>
-<li>Sentence 2: ['the', 'dog', 'lay', 'on', 'the', 'rug']</li>
+<li>A table stores data in rows and columns.</li>
+<li>Example: <strong>employees</strong> table:</li>
 </ul>
-<p><strong>Step 2:</strong> Vocabulary Building</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>age</th>
+<th>department</th>
+<th>salary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Rahul</td>
+<td>25</td>
+<td>IT</td>
+<td>50000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Anita</td>
+<td>28</td>
+<td>HR</td>
+<td>45000</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>Create a unique list of words (vocabulary) from both sentences:</li>
-<li>Vocabulary: ['the', 'cat', 'sat', 'on', 'mat', 'dog', 'lay', 'rug']</li>
+<li>Row → one record</li>
+<li>Column → one field</li>
 </ul>
-<p><strong>Step 3:</strong> Vector Representation</p>
-<ul>
-<li>Create a frequency vector for each sentence based on the vocabulary:</li>
-<li>Sentence 1: [2, 1, 1, 1, 1, 0, 0, 0]</li>
-<li>'the' appears twice, 'cat', 'sat', 'on', and 'mat' appear once, and 'dog', 'lay', 'rug' do not appear.</li>
-<li>Sentence 2: [2, 0, 0, 1, 0, 1, 1, 1]</li>
-<li>'the' appears twice, 'dog', 'lay', 'on', and 'rug' appear once, and 'cat', 'sat', 'mat' do not appear.</li>
-</ul>
-<h2 id="advantages-of-bow">Advantages of BoW<a class="toc-permalink" href="#advantages-of-bow" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Simplicity: BoW is easy to understand and implement.</li>
-<li>Effective for Simple Tasks: It works well for tasks where word frequency is important, like document classification or spam detection.</li>
-</ol>
-<h2 id="limitations-of-bow">Limitations of BoW<a class="toc-permalink" href="#limitations-of-bow" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Ignores Word Order: BoW disregards the order of words in the document, so it cannot capture the meaning or context of words based on how they are arranged.<ul>
-<li>Example: The sentences "The dog chased the cat" and "The cat chased the dog" would have the same BoW representation, despite having different meanings.</li>
-</ul>
-</li>
-<li>High Dimensionality: For large corpora, the vocabulary can become very large, resulting in high-dimensional feature vectors that may be inefficient to process.</li>
-<li>Sparse Representation: Most BoW vectors are sparse, meaning that many positions in the vector are 0, which can be inefficient in terms of memory and computation.</li>
-</ol>
-<h2 id="variations-of-bow">Variations of BoW<a class="toc-permalink" href="#variations-of-bow" title="Permanent link">&para;</a></h2>
-<ol>
-<li>TF-IDF (Term Frequency-Inverse Document Frequency): Instead of using raw word counts, TF-IDF assigns weights to words based on their importance within the document and across all documents in the corpus. This reduces the importance of common words and highlights words that are more meaningful in specific contexts.</li>
-<li>N-grams: BoW typically treats each word as an independent token, but in the N-gram model, contiguous sequences of N words (bigrams, trigrams, etc.) are considered as tokens to preserve some word order.</li>
-</ol>
-<h2 id="implementing-bow-in-python">Implementing BoW in Python<a class="toc-permalink" href="#implementing-bow-in-python" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Sample sentences</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">documents</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;The cat sat on the mat.&quot;</span><span class="p">,</span> <span class="s2">&quot;The dog lay on the rug.&quot;</span><span class="p">]</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># Create a Bag of Words model</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># Fit and transform the documents</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">bow_matrix</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">documents</span><span class="p">)</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># View the vocabulary</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1"># View the Bag of Words representation</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">bow_matrix</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
+<h2 id="basic-sql-command">Basic SQL Command<a class="toc-permalink" href="#basic-sql-command" title="Permanent link">&para;</a></h2>
+<p><strong>SELECT Statement</strong>
+* Used to read data from a table.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span><span class="p">;</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">nltk</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Tokenize sentences</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">sentence1</span> <span class="o">=</span> <span class="s2">&quot;The cat sat on the mat.&quot;</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">sentence2</span> <span class="o">=</span> <span class="s2">&quot;The dog lay on the rug.&quot;</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># Tokenize and count word frequencies</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">tokens1</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">sentence1</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">tokens2</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">sentence2</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">bow1</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">tokens1</span><span class="p">)</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">bow2</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">tokens2</span><span class="p">)</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">bow1</span><span class="p">)</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">bow2</span><span class="p">)</span>
-</code></pre></div></p>
+* means all columns</p>
+<p><strong>Select Specific Columns</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span><span class="p">;</span>
+</code></pre></div>
+<strong>WHERE Clause (Filtering Data)</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IT&#39;</span><span class="p">;</span>
+</code></pre></div>
+<strong>Using Conditions</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">45000</span><span class="p">;</span>
+</code></pre></div>
+<strong>AND / OR</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IT&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">40000</span><span class="p">;</span>
+</code></pre></div>
+<strong>ORDER BY (Sorting Data)</strong>
+  * Used to sort data in ascending (ASC) or descending (DESC) order.
+  * Example: Sort by age (youngest first)
+  <code>sql
+  SELECT * FROM students
+  ORDER BY age;</code>
+  * (Default is ASC)</p>
+<p><strong>Oldest first</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<strong>Sort by name alphabetically</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">ASC</span><span class="p">;</span>
+</code></pre></div>
+<strong>LIMIT (Restrict Number of Rows)</strong>
+  * Used to limit the output rows.
+  * Get first 5 students
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</code></pre></div>
+<strong>Top 3 oldest students</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="k">DESC</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</code></pre></div>
+<strong>ORDER BY + WHERE + LIMIT (Very Important Combo)</strong>
+  * Get top 2 highest paid IT employees</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IT&#39;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="k">DESC</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>SQL Operators (IN, BETWEEN, LIKE)</strong>
+  * <strong>IN Operator</strong> - Used when you want to match multiple values.
+  * <strong>Instead of:</strong> 
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IT&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;HR&#39;</span>
+</code></pre></div>
+  * <strong>Use:</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;IT&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;HR&#39;</span><span class="p">);</span>
+</code></pre></div>
+  * <strong>BETWEEN Operator</strong> - Used for a range of values.
+  * <strong>Example:</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="mi">40000</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">60000</span><span class="p">;</span>
+</code></pre></div>
+  * Includes both 40000 &amp; 60000
+  * <strong>LIKE Operator (Pattern Matching)</strong> - Used with text.</p>
+<div class="highlight"><pre><span></span><code>| Pattern | Meaning                  |
+| ------- | ------------------------ |
+| `%`     | Any number of characters |
+| `_`     | Exactly one character    |
+</code></pre></div>
+<ul>
+<li>Names starting with 'A'
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;A%&#39;</span><span class="p">;</span>
+</code></pre></div></li>
+<li>Names ending with 'n'
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%n&#39;</span><span class="p">;</span>
+</code></pre></div></li>
+<li>Names with 'a' in middle
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">students</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%a%&#39;</span><span class="p">;</span>
+</code></pre></div></li>
+</ul>
 
 
 

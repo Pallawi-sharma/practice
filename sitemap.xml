@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://pallawi-sharma.github.io/Pallawi-sharma/</loc>
-         <lastmod>2024-12-16</lastmod>
+         <loc>https://pallawi-sharma.github.io/pallawi/</loc>
+         <lastmod>2026-02-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pallawi-sharma.github.io/Pallawi-sharma/nlp/</loc>
-         <lastmod>2024-12-16</lastmod>
+         <loc>https://pallawi-sharma.github.io/pallawi/SQL/SQL_basics/</loc>
+         <lastmod>2026-02-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pallawi-sharma.github.io/Pallawi-sharma/nlp/bow/</loc>
-         <lastmod>2024-12-16</lastmod>
+         <loc>https://pallawi-sharma.github.io/pallawi/SQL/SQL_intermediate/</loc>
+         <lastmod>2026-02-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pallawi-sharma.github.io/Pallawi-sharma/nlp/tf-idf/</loc>
-         <lastmod>2024-12-16</lastmod>
+         <loc>https://pallawi-sharma.github.io/pallawi/nlp/</loc>
+         <lastmod>2026-02-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pallawi-sharma.github.io/Pallawi-sharma/react/react-fundamental/</loc>
-         <lastmod>2024-12-16</lastmod>
+         <loc>https://pallawi-sharma.github.io/pallawi/nlp/bow/</loc>
+         <lastmod>2026-02-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pallawi-sharma.github.io/pallawi/nlp/tf-idf/</loc>
+         <lastmod>2026-02-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pallawi-sharma.github.io/pallawi/react/react-fundamental/</loc>
+         <lastmod>2026-02-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
